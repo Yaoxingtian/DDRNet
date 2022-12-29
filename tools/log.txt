@@ -1,0 +1,23 @@
+I Save log info to: ./log.txt
+[1;33mW[0m [1;33mconfig: epochs = '1' is not support currently![0m
+I _fold_constant remove nodes = ['Shape_54', 'Slice_58', 'Concat_59', 'Shape_92', 'Slice_96', 'Concat_97', 'Shape_118', 'Gather_120', 'Shape_121', 'Gather_123', 'Unsqueeze_133', 'Unsqueeze_134', 'Concat_135', 'Shape_136', 'Slice_140', 'Cast_141', 'Concat_142', 'Unsqueeze_156', 'Unsqueeze_157', 'Concat_158', 'Shape_159', 'Slice_163', 'Cast_164', 'Concat_165', 'Unsqueeze_179', 'Unsqueeze_180', 'Concat_181', 'Shape_182', 'Slice_186', 'Cast_187', 'Concat_188', 'Unsqueeze_200', 'Unsqueeze_201', 'Concat_202', 'Shape_203', 'Slice_207', 'Cast_208', 'Concat_209', 'Shape_225', 'Slice_229', 'Concat_230', 'Shape_240', 'Slice_244', 'Concat_245']
+I 
+I _fuse_ops results:
+I     remove_parallel_relu: remove node = ['Relu_39']
+I     convert_resize_to_deconv: remove node = ['Resize_62'], add node = ['Resize_62']
+I     convert_resize_to_deconv: remove node = ['Resize_100'], add node = ['Resize_100']
+I     convert_resize_to_deconv: remove node = ['Resize_145'], add node = ['Resize_145']
+I     convert_global_avgpool_to_conv: remove node = ['GlobalAveragePool_196'], add node = ['GlobalAveragePool_196_dw0', 'GlobalAveragePool_196']
+I     fuse_bn_into_conv: remove node = ['BatchNormalization_197']
+I 
+I sparse weight ...
+I sparse weight done.
+I 
+I 
+I quant optimizer results:
+I     adjust_relu: ['Relu_252', 'Relu_250', 'Relu_238', 'Relu_236', 'Relu_222', 'Relu_219', 'Relu_215', 'Relu_198', 'Relu_194', 'Relu_177', 'Relu_171', 'Relu_154', 'Relu_148', 'Relu_131', 'Relu_125', 'Relu_114', 'Relu_112', 'Relu_110', 'Relu_106', 'Relu_104', 'Relu_102', 'Relu_87', 'Relu_82', 'Relu_80', 'Relu_77', 'Relu_72', 'Relu_70', 'Relu_66', 'Relu_64', 'Relu_46', 'Relu_44', 'Relu_41', 'Relu_36', 'Relu_34', 'Relu_30', 'Relu_28', 'Relu_25', 'Relu_23', 'Relu_19', 'Relu_17', 'Relu_14', 'Relu_12', 'Relu_9', 'Relu_7', 'Relu_5']
+I     broadcast_no_change: ['Resize_248', 'Resize_233', 'AveragePool_175', 'Resize_168', 'AveragePool_152', 'AveragePool_129']
+I     align_concat_split: ['Concat_217']
+I 
+I rknn building ...
+I rknn buiding done
